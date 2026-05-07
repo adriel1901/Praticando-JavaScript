@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .cabecalho {
+        text-align: center;
+
+    }
+
+    .titulo1 {
+        background-color: aqua;
+
+    }
+</style>
+
+
+<body>
+    <div class="cabecalho">
+        <h1 class="titulo1">Meu primeiro
+        </h1>
+    </div>
+
+    <div class="Campos">
+        <input type="text" id="name_id">
+        <input type="button" id="botao" value="Mostrar">
+        <p id="resposta"></p>
+    </div>
+
+    <script>
+        function enviar() {
+            var nome = document.getElementById("name_id").value
+            document.getElementById("resposta").innerHTML = nome
+        }
+        var mostrarBotao = document.getElementById("botao")
+        mostrarBotao.addEventListener("click", enviar)
+    </script>
+</body>
+
+</html>
